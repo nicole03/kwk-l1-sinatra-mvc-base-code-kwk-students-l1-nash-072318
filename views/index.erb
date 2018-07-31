@@ -1,1 +1,20 @@
-
+<html> 
+<head>
+</head>
+<body>
+<h1> Hello! This is an embedded ruby file.  </h1>
+<p>
+My name is <%=@name%> 
+</p> 
+<p> I'm going to pick a number from 1 to 100</p>
+<p> <%=@rand =rand(1...100)%></p>
+<p> The random number I picked is <% if @rand%2==0 %>
+      even </p>
+      <%else %> 
+    <p>odd </p> 
+<%end %>
+<h2> Add 2 numbers together using two variables that you define in your controller</h2>
+<h1> <%=@num1%> + <%=@num2%> = <%=@num1+@num2%>
+<h1>My hometown is Nashville, Tennessee which actually is really boring.</h1>
+</body>
+</html>
